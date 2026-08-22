@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nech to na nás | Pomoc, když nemůžete být na místě</title>
-    <meta name="description" content="Nech to na nás – kontrola chalup, drobné práce, péče o zahradu, vyzvednutí věcí a pomoc vašim blízkým.">
+
+    <title>Nech to na nás | Pomoc v Bechyni a okolí</title>
+
+    <meta name="description" content="Nech to na nás – pomoc s kontrolou nemovitostí, drobnými pracemi, pochůzkami, zahradou a dalšími úkoly v Bechyni a okolí do 25 km.">
+
     <style>
         * {
             box-sizing: border-box;
@@ -49,7 +52,7 @@
         }
 
         .hero {
-            padding: 90px 8%;
+            padding: 70px 8%;
             background: #e8eee8;
             text-align: center;
         }
@@ -65,20 +68,22 @@
             font-weight: normal;
             margin-bottom: 20px;
         }
-.hero-image {
-    display: block;
-    width: 100%;
-    max-width: 850px;
-    height: 420px;
-    object-fit: cover;
-    margin: 30px auto;
-    border-radius: 14px;
-}
+
         .hero p {
             max-width: 700px;
             margin: 0 auto 30px;
             font-size: 19px;
             color: #4b574f;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 850px;
+            height: 420px;
+            object-fit: cover;
+            margin: 30px auto;
+            border-radius: 14px;
         }
 
         .button {
@@ -89,10 +94,15 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            margin: 5px;
         }
 
         .button:hover {
             background: #234832;
+        }
+
+        .button-phone {
+            background: #527c5d;
         }
 
         section {
@@ -129,6 +139,51 @@
             color: #59635c;
         }
 
+        .price-section {
+            background: #ffffff;
+        }
+
+        .price-list {
+            max-width: 850px;
+            margin: auto;
+            display: grid;
+            gap: 16px;
+        }
+
+        .price-item {
+            background: #f7f5ef;
+            padding: 24px 28px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .price-item h3 {
+            color: #315c43;
+            margin-bottom: 5px;
+        }
+
+        .price-item p {
+            color: #59635c;
+        }
+
+        .price {
+            color: #294d38;
+            font-weight: bold;
+            font-size: 20px;
+            white-space: nowrap;
+        }
+
+        .note {
+            max-width: 850px;
+            margin: 25px auto 0;
+            font-size: 14px;
+            color: #68736c;
+            text-align: center;
+        }
+
         .how {
             background: #ffffff;
         }
@@ -150,6 +205,17 @@
             color: #315c43;
         }
 
+        .area {
+            text-align: center;
+            background: #e8eee8;
+        }
+
+        .area p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
         .contact {
             text-align: center;
             background: #dfe9e1;
@@ -157,8 +223,19 @@
 
         .contact p {
             max-width: 650px;
-            margin: 0 auto 25px;
+            margin: 0 auto 20px;
             font-size: 18px;
+        }
+
+        .contact-info {
+            margin: 25px auto;
+            font-size: 19px;
+        }
+
+        .contact-info a {
+            color: #294d38;
+            font-weight: bold;
+            text-decoration: none;
         }
 
         footer {
@@ -187,8 +264,17 @@
                 font-size: 23px;
             }
 
+            .hero-image {
+                height: 300px;
+            }
+
             .services {
                 grid-template-columns: 1fr;
+            }
+
+            .price-item {
+                flex-direction: column;
+                gap: 8px;
             }
 
             section {
@@ -205,14 +291,18 @@
 
     <nav>
         <a href="#sluzby">Služby</a>
+        <a href="#cenik">Ceník</a>
         <a href="#jak-to-funguje">Jak to funguje</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
 </header>
 
 <section class="hero">
+
     <h1>Nech to na nás.</h1>
-<img src="IMG_1209.JPG" alt="Chalupa se zahradou" class="hero-image">
+
+    <img src="IMG_1209.JPG" alt="Chalupa se zahradou" class="hero-image">
+
     <h2>Nemůžete být na místě? My ano.</h2>
 
     <p>
@@ -220,10 +310,18 @@
         Postaráme se o vaši chalupu, dům, zahradu nebo vaše blízké.
     </p>
 
-    <a class="button" href="#kontakt">Potřebujete naši pomoc?</a>
+    <a class="button button-phone" href="tel:+420736259194">
+        📞 Zavolat: 736 259 194
+    </a>
+
+    <a class="button" href="#kontakt">
+        Napsat nám
+    </a>
+
 </section>
 
 <section id="sluzby">
+
     <h2 class="section-title">S čím vám můžeme pomoci</h2>
 
     <div class="services">
@@ -231,16 +329,16 @@
         <div class="service">
             <h3>🏡 Kontrola chalupy a domu</h3>
             <p>
-                Zkontrolujeme stav nemovitosti, okna, vodu, elektřinu,
-                topení nebo případné škody po nepříznivém počasí.
+                Zkontrolujeme stav nemovitosti, okna, dveře, vodu
+                a celkový stav domu nebo chalupy.
             </p>
         </div>
 
         <div class="service">
             <h3>🔧 Drobné práce</h3>
             <p>
-                Zařídíme drobné opravy, montáž, úklid nebo jiné
-                praktické úkoly, na které sami nemáte čas.
+                Drobné opravy, montáž, úklid nebo jiné praktické
+                úkoly, na které sami nemáte čas.
             </p>
         </div>
 
@@ -261,15 +359,15 @@
         </div>
 
         <div class="service">
-            <h3>📦 Vyzvednutí věcí</h3>
+            <h3>📦 Vyzvednutí a odvoz věcí</h3>
             <p>
-                Vyzvedneme zásilku, klíče, objednávku nebo jinou
-                domluvenou věc a doručíme ji tam, kam potřebujete.
+                Vyzvedneme objednávku, klíče nebo jinou domluvenou věc
+                a odvezeme ji tam, kam potřebujete.
             </p>
         </div>
 
         <div class="service">
-            <h3>🤝 A další pomoc</h3>
+            <h3>🤝 Další pomoc</h3>
             <p>
                 Potřebujete něco konkrétního, co zde není uvedeno?
                 Ozvěte se. Pokud to bude možné, rádi pomůžeme.
@@ -277,9 +375,77 @@
         </div>
 
     </div>
+
+</section>
+
+<section class="price-section" id="cenik">
+
+    <h2 class="section-title">Ceník</h2>
+
+    <div class="price-list">
+
+        <div class="price-item">
+            <div>
+                <h3>Výjezd</h3>
+                <p>Výjezd na místo za účelem provedení domluvené služby.</p>
+            </div>
+            <div class="price">250 Kč</div>
+        </div>
+
+        <div class="price-item">
+            <div>
+                <h3>Práce</h3>
+                <p>Drobné práce, pomoc na místě a další domluvené úkoly.</p>
+            </div>
+            <div class="price">490 Kč / hod.</div>
+        </div>
+
+        <div class="price-item">
+            <div>
+                <h3>Kontrola nemovitosti</h3>
+                <p>
+                    Vizuální kontrola domu nebo chalupy, oken, dveří,
+                    vody a celkového stavu nemovitosti.
+                    Po návštěvě vás informujeme o zjištěném stavu
+                    a zašleme fotografii z kontroly.
+                </p>
+            </div>
+            <div class="price">590 Kč</div>
+        </div>
+
+        <div class="price-item">
+            <div>
+                <h3>Doprava</h3>
+                <p>
+                    Cena dopravy je počítána za celou cestu tam i zpět.
+                </p>
+            </div>
+            <div class="price">14 Kč / km</div>
+        </div>
+
+        <div class="price-item">
+            <div>
+                <h3>Drobné pochůzky</h3>
+                <p>
+                    Vyzvednutí objednávky, předání klíčů, vyzvednutí
+                    nebo odvoz věcí, nákup konkrétní věci nebo
+                    vyřízení jednoduché pochůzky.
+                </p>
+            </div>
+            <div class="price">od 299 Kč</div>
+        </div>
+
+    </div>
+
+    <p class="note">
+        U drobných pochůzek se k ceně připočítává doprava a případné náklady
+        spojené s vyřízením požadavku.
+    </p>
+
 </section>
 
 <section class="how" id="jak-to-funguje">
+
     <h2 class="section-title">Jak to funguje?</h2>
 
     <div class="steps">
@@ -291,7 +457,7 @@
 
         <div class="step">
             <strong>2. Domluvíme se</strong>
-            <p>Společně si upřesníme místo, rozsah práce a cenu.</p>
+            <p>Upřesníme si místo, rozsah práce, termín a cenu.</p>
         </div>
 
         <div class="step">
@@ -301,28 +467,79 @@
 
         <div class="step">
             <strong>4. Dáme vám vědět</strong>
-            <p>Po dokončení vás informujeme o výsledku.</p>
+            <p>
+                Po dokončení vás informujeme o výsledku.
+                U kontroly nemovitosti zašleme také fotografii.
+            </p>
         </div>
 
     </div>
+
+</section>
+
+<section class="area">
+
+    <h2 class="section-title">Kde působíme?</h2>
+
+    <p>
+        📍 <strong>Bechyně a okolí do 25 km</strong>
+    </p>
+
+    <p>
+        Doba realizace je vždy dle dohody.
+    </p>
+
 </section>
 
 <section class="contact" id="kontakt">
+
     <h2 class="section-title">Potřebujete někoho na místě?</h2>
 
     <p>
-        Napište nám, co potřebujete zařídit.
-        Společně vymyslíme, jak vám můžeme pomoci.
+        Nemůžete být na místě? Nechte to na nás.
+        Napište nebo zavolejte a domluvíme se.
     </p>
 
-    <a class="button" href="mailto:info@nechtonanas.cz">
-        Napsat nám
+    <div class="contact-info">
+
+        <p>
+            📞 <a href="tel:+420736259194">736 259 194</a>
+        </p>
+
+        <p>
+            ✉️ <a href="mailto:zeleznymartin@centrum.cz">
+                zeleznymartin@centrum.cz
+            </a>
+        </p>
+
+        <p>
+            📍 Bechyně + 25 km
+        </p>
+
+        <p>
+            🕐 Doba dle dohody
+        </p>
+
+    </div>
+
+    <a class="button button-phone" href="tel:+420736259194">
+        📞 Zavolat
     </a>
+
+    <a class="button" href="mailto:zeleznymartin@centrum.cz">
+        ✉️ Napsat e-mail
+    </a>
+
 </section>
 
 <footer>
+
     <p>© 2026 Nech to na nás</p>
-    <p>Pomoc tam, kde ji potřebujete.</p>
+
+    <p>
+        Pomoc tam, kde ji potřebujete.
+    </p>
+
 </footer>
 
 </body>
